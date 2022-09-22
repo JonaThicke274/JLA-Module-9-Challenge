@@ -1,7 +1,7 @@
 # Professional README Generator Application
 
 ## Purpose/Use of Application
-Using Node.js in your own terminal, input your github and project information to generate a portfolio for yourself!
+Using Node.js in your own terminal, input your github and project information to generate a professional README file.
 
 ## Built With:
 * Javascript
