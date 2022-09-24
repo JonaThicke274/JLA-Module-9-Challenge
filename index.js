@@ -68,12 +68,40 @@ const promptUser = () => {
 }
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const writeToFile = (fileContent) => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile("./dist.README.md", fileContent, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+
+            resolve ({
+                ok: true,
+                message: "README.md file generated! Please see dist folder."
+            });
+        });
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {
     console.log("This a README generator. Please answer the following questions to generate your README:");
-    promptUser();
+    promptUser()
+        .then(answers => {
+            console.log(answers);
+            return genMarkDown(answers);
+        })
+        .then(fileContent => {
+            console.log(fileContent);
+            return writeToFile(fileContent);
+        })
+        .then(writeFileResponse => {
+            console.log(writeFileResponse.message);
+        })
+        .catch(err => {
+            console.log("Error generating README.md. File was not created.")
+        })
 };
 
 // Function call to initialize app
