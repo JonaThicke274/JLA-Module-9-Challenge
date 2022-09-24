@@ -7,6 +7,8 @@
 
   Test Description
 
+  ## Table of Contents
+
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
@@ -40,7 +42,7 @@
 
   ## Contributions
 
-  Test Contributions Info
+  Test Contribution Info
 
   ## Questions
 
