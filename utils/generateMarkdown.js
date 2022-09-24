@@ -1,4 +1,4 @@
-
+// Object containing the license badges and links that matches the same possible inputs the user will select from
 const licenseBadgeAndLinks = {
   "Apache 2.0": "[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
   "BSD 3-Clause": "[![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD--3--Clause-lightblue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
@@ -12,7 +12,7 @@ const licenseBadgeAndLinks = {
 
 
 
-// TODO: Create a function to generate markdown for README
+// Function that generates the contents of the README.md file
 function generateMarkdown(data) {
   
   data.licenseBadgeLink = licenseBadgeAndLinks[data.license];

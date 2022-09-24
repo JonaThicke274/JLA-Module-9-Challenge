@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// Packages for application: Inquirer, File System, and generateMarkdown.js
 const inquirer = require("inquirer");
 const fs = require("fs");
 const genMarkDown = require("./utils/generateMarkdown.js")
 
 
-// TODO: Create an array of questions for user input
+// Array of questions for user
 const questions = [
     {
         type: "input",
@@ -63,11 +63,12 @@ const questions = [
     },
 ];
 
+// Function to prompt user to answer questions using inquirer
 const promptUser = () => {
     return inquirer.prompt(questions);
 }
 
-// TODO: Create a function to write README file
+// Function for writing/generating the file with content that is passed from generateMarkdown.js
 const writeToFile = (fileContent) => {
     return new Promise((resolve, reject) => {
         fs.writeFile("./dist/README.md", fileContent, err => {
@@ -84,21 +85,26 @@ const writeToFile = (fileContent) => {
     });
 };
 
-// TODO: Create a function to initialize app
+// Function that initliazes app
 function init() {
+    // Tells user the application has initialized and that they will begin to answer questions
     console.log("This a README generator. Please answer the following questions to generate your README:");
     promptUser()
+        // Passes the user's answers to genMarkdown which calls from generateMarkdown.js
         .then(answers => {
-            console.log(answers);
+            // console.log(answers);
             return genMarkDown(answers);
         })
+        // Passes the generated contents into writeToFile to generate the READMME.md file in the dist folder
         .then(fileContent => {
-            console.log(fileContent);
+            // console.log(fileContent);
             return writeToFile(fileContent);
         })
+        // Shows the user the results file generation.
         .then(writeFileResponse => {
             console.log(writeFileResponse.message);
         })
+        // Catches any error and displays message below indicating error.
         .catch(err => {
             console.log("Error generating README.md. File was not created.")
         })
