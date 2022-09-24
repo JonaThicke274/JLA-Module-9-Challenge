@@ -63,11 +63,18 @@ const questions = [
     },
 ];
 
+const promptUser = () => {
+    return inquirer.prompt(questions);
+}
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    console.log("This a README generator. Please answer the following questions to generate your README:");
+    promptUser();
+};
 
 // Function call to initialize app
 init();
