@@ -70,7 +70,7 @@ const promptUser = () => {
 // TODO: Create a function to write README file
 const writeToFile = (fileContent) => {
     return new Promise((resolve, reject) => {
-        fs.writeFile("./dist.README.md", fileContent, err => {
+        fs.writeFile("./dist/README.md", fileContent, err => {
             if (err) {
                 reject(err);
                 return;

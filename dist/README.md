@@ -1,9 +1,9 @@
 
-  # test title
+  # Test Title
 
   ## Description
 
-  test description
+  Test Description
 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -16,7 +16,7 @@
 
   To install the necessary dependencies, please run the following code:
 
-  npm i install@8.2.4
+  npm i inquirer@8.2.4
 
   ## Usage
 
@@ -28,7 +28,7 @@
 
   To test the application, please run the following code:
 
-  test testing code
+  Test Testing Code???
 
   ## Contributions
 
