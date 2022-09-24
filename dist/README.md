@@ -1,6 +1,8 @@
 
   # Test Title
 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
   ## Description
 
   Test Description
@@ -9,30 +11,36 @@
   * [Usage](#usage)
   * [License](#license)
   * [Tests](#tests)
-  * [Contributions](#contributions)
+  * [Contributions](#contributions}
   * [Questions](#questions)
   
   ## Installation
 
   To install the necessary dependencies, please run the following code:
-
-  npm i inquirer@8.2.4
+  
+  `
+  Test Install Code
+  `
 
   ## Usage
 
   To run the application, please run the following code:
-
-  node index.js
+  
+  `
+  Test Usage Code
+  `
 
   ## Tests
 
   To test the application, please run the following code:
-
-  Test Testing Code???
+  
+  `
+  Test Testing Code
+  `
 
   ## Contributions
 
-  Contributions were made by Jonathan Lipata Arevalo
+  Test Contribution Info
 
   ## Questions
 
