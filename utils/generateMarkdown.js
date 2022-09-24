@@ -29,20 +29,26 @@ function generateMarkdown(fileContent) {
   ## Installation
 
   To install the necessary dependencies, please run the following code:
-
+  
+  \`
   ${fileContent.installation}
+  \`
 
   ## Usage
 
   To run the application, please run the following code:
-
+  
+  \`
   ${fileContent.usage}
+  \`
 
   ## Tests
 
   To test the application, please run the following code:
-
+  
+  \`
   ${fileContent.testing}
+  \`
 
   ## Contributions
 
