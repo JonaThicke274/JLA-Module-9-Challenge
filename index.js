@@ -44,17 +44,17 @@ const questions = [
     {
         type: "input",
         name: "installation",
-        message: "Describe the necessary steps to install your project."
+        message: "To install the necessary dependencies, please run the following code: (input code)"
     },
     {
         type: "input",
         name: "usage",
-        message: "Provide instructions for usage of your project.",
+        message: "To run the application, please run the following code: (insert code)",
     },
     {
         type: "input",
         name: "testing",
-        message: "How can a user run tests?" 
+        message: "To test the application, please run the following code: (insert code)" 
     },
     {
         type: "input",
