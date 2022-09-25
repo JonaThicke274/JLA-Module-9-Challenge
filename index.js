@@ -29,7 +29,7 @@ const questions = [
     {
         type: "list",
         name: "license",
-        message: "What license(s) does your project have?",
+        message: "What license does your project use?",
         choices: [
             "Apache 2.0",
             "BSD 3-Clause",
